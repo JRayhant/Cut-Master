@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f2b48" />
+      <stop offset="100%" stop-color="#071626" />
+    </linearGradient>
+    <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Background with Safe Margin -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)"/>
+  
+  <!-- Subtle Cutting Pattern Grid Lines -->
+  <path d="M 64 128 H 448 M 64 256 H 448 M 64 384 H 448" stroke="#ffffff" stroke-opacity="0.07" stroke-dasharray="8 8" stroke-width="2"/>
+  <path d="M 128 64 V 448 M 256 64 V 448 M 384 64 V 448" stroke="#ffffff" stroke-opacity="0.07" stroke-dasharray="8 8" stroke-width="2"/>
+
+  <!-- Fabric / Cutting Marker Contour -->
+  <path d="M 100 120 C 180 80, 332 80, 412 120 C 420 220, 420 300, 412 392 C 332 432, 180 432, 100 392 Z" 
+        fill="none" stroke="url(#emeraldGrad)" stroke-width="6" stroke-dasharray="14 8" opacity="0.6"/>
+
+  <!-- Master Shears / Cutting Scissors Icon -->
+  <g transform="translate(136, 126) scale(0.47)" filter="url(#shadow)">
+    <!-- Right Blade & Handle -->
+    <path d="M 140 380 C 140 440 80 480 20 440 C -40 400 -20 320 40 300 L 260 210 L 480 60 C 490 54 502 66 496 76 L 270 240 L 154 330 C 144 344 140 362 140 380 Z" fill="#f8fafc"/>
+    <circle cx="20" cy="390" r="32" fill="#0f2b48"/>
+    
+    <!-- Left Blade & Handle -->
+    <path d="M 372 380 C 372 440 432 480 492 440 C 552 400 532 320 472 300 L 252 210 L 32 60 C 22 54 10 66 16 76 L 242 240 L 358 330 C 368 344 372 362 372 380 Z" fill="url(#emeraldGrad)"/>
+    <circle cx="492" cy="390" r="32" fill="#0f2b48"/>
+
+    <!-- Center Pivot Screw -->
+    <circle cx="256" cy="225" r="22" fill="#f8fafc"/>
+    <circle cx="256" cy="225" r="14" fill="#059669"/>
+  </g>
+
+  <!-- Title Monogram / Cut Ruler -->
+  <g transform="translate(196, 386)">
+    <rect x="-60" y="-12" width="240" height="34" rx="17" fill="#059669" fill-opacity="0.2" stroke="#10b981" stroke-width="1.5"/>
+    <text x="60" y="11" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="16" font-weight="700" fill="#34d399" text-anchor="middle" letter-spacing="3">CUT MASTER</text>
+  </g>
+</svg>

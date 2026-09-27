@@ -1,0 +1,6 @@
+{
+  "name": "Cutting Interview Master",
+  "description": "Comprehensive Garments Cutting Written Interview Preparation App with bilingual questions, abbreviations flashcards, interactive calculations, live search, and offline Android PWA support.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
